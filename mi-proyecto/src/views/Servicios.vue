@@ -93,37 +93,37 @@ const servicios = [
   {
     id: 1,
     nombre: 'Transformación de prendas',
-    descripcion: 'Descripción del servicio, características, tiempo estimado',
+    descripcion: 'Ajustamos, achicamos, agrandamos o rediseñamos según tus necesidades, para que tu prenda favorita vuelva a brillar.',
     icono: iconoTransformacion,
   },
   {
     id: 2,
     nombre: 'Trabajos en cuero',
-    descripcion: 'Descripción del servicio, características, tiempo estimado',
+    descripcion: 'Reparación de prendas y accesorios en cuero. Costuras reforzadas, ajustes de talla y arreglos especializados para un material que requiere manos expertas.',
     icono: iconoCuero,
   },
   {
     id: 3,
     nombre: 'Trabajos en pluma',
-    descripcion: 'Descripción del servicio, características, tiempo estimado',
+    descripcion: 'Confección y reparación de prendas con plumas y plumón. Un trabajo delicado que exige precisión, cuidando cada detalle para mantener la calidez y el estilo de tu prenda.',
     icono: iconoPluma,
   },
     {
     id: 4,
     nombre: 'Botonería',
-    descripcion: 'Descripción del servicio, características, tiempo estimado',
+    descripcion: 'Cambio, reposición y ajuste de botones de todo tipo. Un detalle pequeño que marca la diferencia en el acabado y la durabilidad de tu ropa.',
     icono: iconoBoton,
   },
     {
     id: 5,
     nombre: 'Cambios de cierre',
-    descripcion: 'Descripción del servicio, características, tiempo estimado',
+    descripcion: 'Reemplazamos cierres dañados o atascados en chaquetas, pantalones, carteras y más, dejando la prenda como nueva y lista para volver a usar.',
     icono: iconoCremallera,
   },
     {
     id: 6,
     nombre: 'Clínica de ropa',
-    descripcion: 'Descripción del servicio, características, tiempo estimado',
+    descripcion: 'Diagnóstico y reparación integral para tu ropa: desde pequeños arreglos hasta intervenciones más complejas. Evaluamos cada prenda y te damos la mejor solución.',
     icono: iconoClinica,
   },
 ]

@@ -17,6 +17,7 @@
     --color-nav: #F5F0EB;
     --color-hover: #79617C;
     --color-contact: #F8662B;
+    --color-detail: #B8955A;
 
     /*breakpoints*/
     --breakpoint-xs: 360px;
@@ -29,12 +30,10 @@
 
 
 body {
-background: linear-gradient(
-    180deg,
-    var(--color-primary-dark) 40%,
-    color-mix(in srgb, var(--color-hover) 40%, var(--color-primary-dark)) 60%,
-    color-mix(in srgb, var(--color-hover) 90%, transparent) 85%
-);
+    background: linear-gradient(180deg,
+            var(--color-primary-dark) 40%,
+            color-mix(in srgb, var(--color-hover) 40%, var(--color-primary-dark)) 60%,
+            color-mix(in srgb, var(--color-hover) 90%, transparent) 85%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -42,45 +41,46 @@ background: linear-gradient(
 }
 
 
-  h1 {
-        font-family: var(--font-arima);
-        line-height: var(--text-h1--line-height);
-        font-weight: 500;
-        margin-bottom: 1rem;
-        font-size: clamp(1.7rem, 4vw + 1rem, 3rem);
-    }
+h1 {
+    font-family: var(--font-arima);
+    line-height: var(--text-h1--line-height);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: clamp(1.7rem, 4vw + 1rem, 3rem);
+}
 
-    h2 {
-        font-family: var(--font-arima);
-        line-height: var(--text-h2--line-height);
-        font-weight: 400;
-        margin-bottom: 0.875rem;
-        font-size:  clamp(1.5rem, 3vw + 0.75rem, 2.25rem);
-    }
+h2 {
+    font-family: var(--font-arima);
+    line-height: var(--text-h2--line-height);
+    font-weight: 400;
+    margin-bottom: 0.875rem;
+    font-size: clamp(1.5rem, 3vw + 0.75rem, 2.25rem);
+}
 
-    h3 {
-        font-family: var(--font-arima);
-        line-height: var(--text-h3--line-height);
-        font-weight: 600;
-        margin-bottom: 0.75rem;
-        font-size: clamp(1.25rem, 2vw + 0.5rem, 1.75rem);
-    }
-        h4 {
-        font-family: var(--font-tenor);
-        line-height: var(--text-h3--line-height);
-        font-weight: 400;
-        margin-bottom: 0.75rem;
-        font-size: clamp(0.8rem, 1.2vw + 0.5rem, 1rem);
-    }
+h3 {
+    font-family: var(--font-arima);
+    line-height: var(--text-h3--line-height);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    font-size: clamp(1.25rem, 2vw + 0.5rem, 1.75rem);
+}
 
-    p {
-        font-family: var(--font-tenor);
-        line-height: var(--text-p--line-height);
-        margin-bottom: 1rem;
-        font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
-    }
+h4 {
+    font-family: var(--font-tenor);
+    line-height: var(--text-h3--line-height);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    font-size: clamp(0.8rem, 1.2vw + 0.5rem, 1rem);
+}
 
-/* Seleccionamos solo los enlaces de texto dentro del contenedor del menú */
+p {
+    font-family: var(--font-tenor);
+    line-height: var(--text-p--line-height);
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+}
+
+
 nav .font-arima a {
     position: relative;
     color: var(--color-nav);
@@ -114,10 +114,30 @@ nav .font-arima a:hover {
     }
 
     .galeria-img {
-        @apply w-55 h-60 object-cover rounded-lg border-1 border-orange-300 ;
+        @apply w-55 h-60 object-cover rounded-lg border-1 border-orange-300;
     }
 }
-.btn-whatsapp:hover{
-color: var(--color-primary-dark)
+
+.btn-whatsapp:hover {
+    color: var(--color-primary-dark)
 }
 
+.contenedor-bienvenida {
+    position: relative;
+    isolation: isolate;
+    color: white;
+    background-color: black;
+}
+
+.contenedor-bienvenida::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    background-image: url('./assets/img/anggybienvenida.png');
+    background-size: cover;
+    opacity: 0.4;
+    border-radius: 1rem;
+}

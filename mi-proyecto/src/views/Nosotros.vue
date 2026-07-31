@@ -3,7 +3,7 @@
         <h1 class=" text-amber-100 px-5 ">Nuestra Historia: Pasión, Detalle y Confección en el Corazón de Santiago</h1>
         <p class=" text-amber-50">Tras una valiosa trayectoria en el emprendimiento, Anggy redescubrió en el arte de la costura su auténtica pasión.
 
-Anggy Costuras nace como un taller de confección y alta sastrería con una visión integral, concebido como un espacio donde la atención al detalle y la vocación de servicio son la prioridad.
+Anggy Costuras nace como un taller de costurería con una visión integral, concebido como un espacio donde la atención al detalle y la vocación de servicio son la prioridad.
 
 Cada ajuste, basta y confección se ejecuta con la máxima dedicación, con el propósito de otorgar una nueva vida a cada prenda y devolver a nuestros clientes el confort, la elegancia y la confianza a través de su vestuario.</p>
     <!-- Galería grid: solo desktop -->
