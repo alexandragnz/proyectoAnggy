@@ -27,7 +27,7 @@
         <a       href="https://wa.me/940118168"
   target="_blank"
   rel="noopener noreferrer"
-  class="btn-whatsapp hidden m:flex m:flex-row m:items-center bg-transparent hover:bg-hover hover:text-amber-950 text-amber-50 border-2 border-hover gap-3 px-5 py-1.5 rounded-2xl text-sm font-medium transition no-underline"
+  class="btn-whatsapp hidden justify-center m:flex m:flex-row m:items-center bg-transparent hover:bg-hover hover:text-amber-950 text-amber-50 border-2 border-hover gap-3 px-4 py-1.5 rounded-2xl  transition no-underline"
   style="position: static;"
 >
 
@@ -40,7 +40,7 @@
         @click="menuAbierto = !menuAbierto"
         class="m:hidden p-2 rounded-md hover:bg-hover focus:outline-none"
       >
-        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+        <svg class="h-6 w-6 text-white" stroke="currentColor" fill="none" viewBox="0 0 24 24">
           <path v-if="!menuAbierto" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>

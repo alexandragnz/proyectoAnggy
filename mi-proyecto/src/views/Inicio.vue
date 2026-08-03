@@ -16,7 +16,7 @@
           ANGGY reparaciones y costuras
         </h1>
         <h3 class="mt-2 text-sm text-gray-200">
-          Clinica de ropa, bordados, transformacion de textiles y más.
+          Clinica de ropa, bordados, transformación de textiles y más.
         </h3>
         <a
           href="./contacto"
@@ -44,7 +44,7 @@
       <div class="text-center my-auto px-8">
         <h1 class="text-4xl font-bold">ANGGY reparaciones y costuras</h1>
         <h3 class="mt-2 text-white">
-          Clinica de ropa, bordados, transformacion de textiles y más.
+          Clinica de ropa, bordados, transformación de textiles y más.
         </h3>
 
       </div>
@@ -157,7 +157,7 @@
         </a>
       </div>
  
-      <div class="w-1/2 rounded-xl overflow-hidden min-h-[200px] border-detail border-2">
+      <div class="w-1/2 rounded-xl overflow-hidden min-h-[200px]">
         <img :src="imagenSitial" class="w-full min-h-[200px] h-full object-cover" alt="Sitial y mesa de trabajo" />
       </div>
     </div>
@@ -168,6 +168,17 @@
 </template>
 
 <script setup>
+
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Anggy Costuras - Costuras y arreglos de ropa',
+  meta: [
+    { name: 'description', content: 'Local de costuras en Santiago Centro. Bastas, ajustes de ropa, arreglos en cuero, arreglos en pluma, reposición de botones, cambios de cierre, transformación textil, .' },
+    { property: 'og:title', content: 'Anggy Costuras - Costuras y arreglos de ropa' },
+    { property: 'og:description', content: 'Local de costuras en Santiago Centro. Arreglos, ajustes y transformación textil.' },
+  ]
+})
 defineProps({
   imagenTienda: {
     type: String,

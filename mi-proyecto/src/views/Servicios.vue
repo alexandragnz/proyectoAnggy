@@ -22,7 +22,7 @@
   </section>
   <section class="py-16  w-3/4 mx-auto">
     <div class="contenedor">
-      <h2 class=" text-amber-50 text-center mb-10">Lo que hacemos por ti</h2>
+      <h2 class=" text-white text-center mb-10">Lo que hacemos por ti</h2>
 
       <div class="grid grid-cols-1 m:grid-cols-2 gap-8">
 
@@ -57,10 +57,20 @@
 </template>
 
 <script setup>
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Servicios - Anggy costuras',
+  meta: [
+    { name: 'description', content: 'Arreglos de ropa, bastas, arreglos prendas de cuero y pluma y más en Santiago centro.' },
+    { property: 'og:title', content: 'Servicios - Anggy costuras' },
+    { property: 'og:description', content: 'Arreglos de ropa, ajustes y basta de ropa, arreglos prendas de cuero y pluma y más en Santiago centro.' },
+  ]
+})
 import { ref, onMounted, onUnmounted } from 'vue'
 
 // Imagen sección 1
-import imagenNuestrosServicios from '../assets/img/anggymaquina.png'
+import imagenNuestrosServicios from '../assets/img/anggymaquina.jpeg'
 
 // Imágenes slider sección 2
 import slider1 from '../assets/img/anggyservicios.png'
@@ -127,6 +137,7 @@ const servicios = [
     icono: iconoClinica,
   },
 ]
+
 </script>
 
 <style scoped>

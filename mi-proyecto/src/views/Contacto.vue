@@ -1,9 +1,7 @@
 <template>
   <section class="seccion-contacto mx-auto max-w-6xl px-4 py-8 m:py-12">
     <div class="contenedor-contacto w-3/4 mx-auto">
-      
-      <!-- Encabezado -->
-      <h1 class="titulo-h1 text-amber-100 text-center">Contáctanos</h1>
+      <h1 class="titulo-h1 text-white text-center">Contáctanos</h1>
       <p class="texto-parrafo text-amber-50 text-center max-w-2xl mx-auto mb-8 m:mb-12">
         Estamos para ayudarte. Escríbenos o visítanos en nuestro taller.
       </p>
@@ -12,7 +10,7 @@
       <div class="grid grid-cols-1 m:grid-cols-2 gap-6 lg:gap-10 items-stretch">
 
         <!-- Columna izquierda: Imagen -->
-        <div class="flex flex-col h-full">
+        <div class="flex flex-col h-full hidden md:block">
           <img
             :src="imagenTienda"
             alt="Fachada de Anggy Costuras"
@@ -23,7 +21,7 @@
         <!-- Columna derecha: Mapa + Información -->
         <div class="w-full max-h-[650px] gap-5 flex flex-col justify-between">
           
-          <!-- Mapa interactivo -->
+          <!-- Mapa -->
           <div class="w-full h-60 s:h-72 m:h-1/2 shrink-0">
             <iframe
               :src="mapaUrl"
@@ -62,6 +60,16 @@
   </section>
 </template>
 <script setup>
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Contacto - Anggy costuras',
+  meta: [
+    { name: 'description', content: 'Contáctanos para tus arreglos y confección a medida en Santiago centro.' },
+    { property: 'og:title', content: 'Contacto - Anggy costuras' },
+    { property: 'og:description', content: 'Contáctanos para tus arreglos y confección a medida en Santiago centro.' },
+  ]
+})
 import imagenTienda from '../assets/img/anggycontacto.png'
 const mapaUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3900198671095!2d-70.6508582!3d-33.4391439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5ec9bec47c5%3A0xd71f07c0a59695ac!2sAnggy%20costuras!5e0!3m2!1ses-419!2scl!4v1784956924607!5m2!1ses-419!2scl"
 </script>
