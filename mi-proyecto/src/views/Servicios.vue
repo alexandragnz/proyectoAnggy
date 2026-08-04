@@ -1,7 +1,7 @@
 <template>
   <div class=" max-w-6xl px-4 py-8  mx-auto ">
-  <section class="seccion-contenido mx-auto  py-10 px-4 rounded-lg bg-primary/90 rounded-2xl w-3/4">
-  <h1 class="text-center text-primary-dark ">Nuestros servicios</h1>
+  <section class="seccion-contenido mx-auto p-3 rounded-lg bg-primary/90 rounded-2xl w-3/4">
+  <h1 class="text-center text-primary-dark pt-1 ">Nuestros servicios</h1>
 <div class="grid grid-cols-1 m:grid-cols-2 gap-6 m:gap-10 ">
 
   <div class="mx-auto order-1 m:order-2">
@@ -27,11 +27,11 @@
       <div class="grid grid-cols-1 m:grid-cols-2 gap-8">
 
         <!-- Columna izquierda - cards con scroll -->
-        <div class="flex flex-col mx-auto gap-4 max-h-[600px] overflow-y-auto pr-2 servicios-scroll">
+        <div class="flex flex-col mx-auto gap-4 max-h-[650px] overflow-y-auto pr-2 servicios-scroll">
           <div
             v-for="servicio in servicios"
             :key="servicio.id"
-            class="bg-primary rounded-2xl p-6 shadow-md text-center"
+            class="bg-primary rounded-2xl p-3 shadow-md text-center"
           >
             <img :src="servicio.icono" :alt="servicio.nombre" class=" mx-auto h-10 w-10 mb-3" />
             <h3 class="text-secondary font-semibold text-lg mb-1">{{ servicio.nombre }}</h3>
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Columna derecha - slider de imágenes -->
-        <div class="relative w-full h-[600px]  overflow-hidden">
+        <div class="relative w-full h-[600px] hidden md:block  overflow-hidden">
           <Transition name="fade" mode="out-in">
             <img
               :key="imagenActual"
