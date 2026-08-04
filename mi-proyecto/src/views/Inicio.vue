@@ -12,17 +12,17 @@
       <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/50 to-transparent"></div>
 
       <div class="absolute bottom-0 left-0 right-0 p-5">
-        <h1 class="text-2xl font-bold text-white leading-snug">
+        <h1 class="text-2xl font-bold text-white text-center leading-snug">
           ANGGY reparaciones y costuras
         </h1>
-        <h3 class="mt-2 text-sm text-gray-200">
+        <h3 class="mt-2 text-sm text-gray-200 text-center">
           Clinica de ropa, bordados, transformación de textiles y más.
         </h3>
         <a
           href="./contacto"
-          class="inline-flex items-center gap-2 mt-6 hover:bg-secondary bg-primary-dark  text-amber-50 hover:text-orange-950 font-medium px-6 py-3 rounded-full transition no-underline"
+          class="flex items-center mx-auto justify-center gap-2 mt-6  bg-hover  text-amber-50 active:bg-:text-orange-950 font-medium w-3/4 px-6 py-3 rounded-full transition no-underline"
         >
-          Contáctanos
+          Nuestra ubicación
         </a>
       </div>
     </section>
@@ -54,6 +54,7 @@
   <section>
       <!-- Mobile -->
     <div class="lg:hidden px-4">
+      <h2 class="text-white text-center">Trabajamos en cuero y pluma</h2>
       <div class="grid grid-cols-2 gap-3">
         <div class="rounded-xl overflow-hidden min-h-[120px] mt-4 shrink-0">
           <img :src="imagenAntes" class="w-full h-full object-cover" alt="Antes de la reparación" />
@@ -74,7 +75,7 @@
       <div class="flex justify-center mt-5">
         <a
           href="./servicios"
-          class="inline-flex items-center gap-2 mt-6 hover:bg-secondary bg-primary-dark transition  text-amber-50 hover:text-orange-950 font-medium px-6 py-3 rounded-full"
+          class="inline-flex items-center gap-2 mt-6  bg-primary-dark transition  text-amber-50 active:bg-text-orange-950 font-medium px-6 py-3 rounded-full"
         >
           Conoce nuestros servicios
         </a>
@@ -112,14 +113,14 @@
  
     <!-- Mobile -->
     <div class="lg:hidden px-4">
-      <h2 class="text-xl font-bold text-white">Innovación que nos distingue</h2>
-      <p class="text-secondary text-sm mt-1">Especialistas en Cuero y Pluma</p>
+      <h2 class="text-xl font-bold text-white text-center">Innovación que nos distingue</h2>
+      <p class="text-secondary text-sm text-center mt-1">Especialistas en Cuero y Pluma</p>
  
       <div class="rounded-xl w-3/4 overflow-hidden mx-auto h-70 mt-4">
         <img :src="imagenSitial" class="w-full h-full object-cover" alt="Sitial y mesa de trabajo" />
       </div>
  
-      <p class="mt-4 text-sm text-gray-200 leading-relaxed">
+      <p class="mt-4 text-sm text-gray-200 text-center leading-relaxed">
         Sabemos lo delicados y valiosos que son estos materiales. Ya sea que
         necesites entallar una chaqueta de cuero de alta gama o reparar un
         delicado abrigo de plumas para el invierno, contamos con la técnica,
@@ -158,7 +159,7 @@
       </div>
  
       <div class="w-1/2 rounded-xl overflow-hidden min-h-[200px]">
-        <img :src="imagenSitial" class="w-full min-h-[200px] h-full object-cover" alt="Sitial y mesa de trabajo" />
+        <img :src="imagenSitial" class="w-full min-h-[200px] h-[480px] object-cover" alt="Sitial y mesa de trabajo" />
       </div>
     </div>
  
@@ -203,6 +204,6 @@ defineProps({
 import imagenTienda from '../assets/img/fachada.png'
 import imagenAntes from '../assets/img/antes.png'
 import imagenDespues from '../assets/img/despues.png'
-import imagenSitial from '../assets/img/sitialAnggy.png'
+import imagenSitial from '../assets/img/sitialAnggy.webp'
 import imagenBienvenida from '../assets/img/anggybienvenida.png'
 </script>
