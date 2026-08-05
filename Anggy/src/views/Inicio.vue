@@ -153,7 +153,7 @@
         </p>
         <a
           href= "./contacto"
-          class="inline-flex items-center gap-2 mt-6 hover:bg-secondary bg-primary-dark text-amber-50 hover:text-orange-950 font-medium px-6 py-3 transition  rounded-full"
+          class="inline-flex items-center gap-2 mt-6 hover:bg-secondary bg-hover text-amber-50 hover:text-orange-950 font-medium px-6 py-3 transition  rounded-full"
         >
           Contáctanos
         </a>
