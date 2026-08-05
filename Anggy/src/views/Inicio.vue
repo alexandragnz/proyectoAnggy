@@ -75,7 +75,8 @@
       <div class="flex justify-center mt-5">
         <a
           href="./servicios"
-          class="inline-flex items-center gap-2 mt-6  bg-primary-dark transition  text-amber-50 active:bg-text-orange-950 font-medium px-6 py-3 rounded-full"
+          class="inline-flex items-center gap-2 mt-6  bg-hover  active:bg-secondary
+           transition  text-amber-50 active:bg-text-orange-950 font-medium px-6 py-3 rounded-full"
         >
           Conoce nuestros servicios
         </a>
@@ -101,7 +102,7 @@
         </p>
         <a
           href="./servicios"
-          class="inline-flex items-center gap-2 mt-6 hover:bg-secondary bg-primary-dark transition  text-amber-50 hover:text-orange-950 font-medium px-6 py-3 rounded-full"
+          class="inline-flex items-center gap-2 mt-6 active:bg-secondary bg-hover  text-amber-50 hover:text-orange-950 font-medium px-6 py-3 rounded-full"
         >
           Conoce nuestros servicios
         </a>
@@ -131,7 +132,7 @@
       <div class="flex justify-center mt-5">
         <a
           href="./contacto"
-          class="inline-flex items-center gap-2 mt-6 hover:bg-secondary bg-primary-dark text-amber-50 transition  hover:text-orange-950 font-medium px-6 py-3 rounded-full"
+          class="inline-flex items-center gap-2 mt-6 active:bg-secondary bg-primary-dark text-amber-50 transition font-medium px-6 py-3 rounded-full"
         >
           Contáctanos
         </a>
