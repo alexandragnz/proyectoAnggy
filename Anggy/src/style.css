@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Tenor+Sans&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /*fuentes y sus tamaños*/
+    --font-arima: "Arima", system-ui;
+    --font-tenor: "Tenor Sans", sans-serif;
+    --text-h1--line-height: 1.2;
+    --text-h2--line-height: 1.25;
+    --text-h3--line-height: 1.3;
+    --text-p--line-height: 1.6;
+
+    /*colores*/
+    --color-primary: #F5F0EB;
+    --color-primary-dark: #0E020F;
+    --color-secondary: #E86030;
+    --color-nav: #F5F0EB;
+    --color-hover: #79617C;
+    --color-contact: #F8662B;
+    --color-detail: #B8955A;
+
+    /*breakpoints*/
+    --breakpoint-xs: 360px;
+    --breakpoint-s: 640px;
+    --breakpoint-m: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+
+}
+
+
+body {
+    background: linear-gradient(180deg,
+            var(--color-primary-dark) 40%,
+            color-mix(in srgb, var(--color-hover) 40%, var(--color-primary-dark)) 60%,
+            color-mix(in srgb, var(--color-hover) 90%, transparent) 85%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+h1 {
+    font-family: var(--font-arima);
+    line-height: var(--text-h1--line-height);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: clamp(1.7rem, 4vw + 1rem, 3rem);
+}
+
+h2 {
+    font-family: var(--font-arima);
+    line-height: var(--text-h2--line-height);
+    font-weight: 400;
+    margin-bottom: 0.875rem;
+    font-size: clamp(1.5rem, 3vw + 0.75rem, 2.25rem);
+}
+
+h3 {
+    font-family: var(--font-arima);
+    line-height: var(--text-h3--line-height);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    font-size: clamp(1.10rem, 1.5vw + 0.5rem, 1.5rem);
+}
+
+h4 {
+    font-family: var(--font-tenor);
+    line-height: var(--text-h3--line-height);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    font-size: clamp(0.8rem, 1.2vw + 0.5rem, 1rem);
+}
+
+p {
+    font-family: var(--font-tenor);
+    line-height: var(--text-p--line-height);
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 0.8vw + 0.5rem, 1.10rem);
+}
+
+span {
+    font-family: var(--font-arima);
+    line-height: var(--text-p--line-height);
+    font-size: clamp(0.5rem, 0.5vw + 0.5rem, 1rem);
+}
+
+a{
+    font-family: var(--font-arima)
+}
+
+nav .font-arima a {
+    position: relative;
+    color: var(--color-nav);
+    text-decoration: none;
+}
+
+nav .font-arima a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-hover);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+nav .font-arima a:hover::after {
+    transform: scaleX(1);
+}
+
+nav .font-arima a:hover {
+    color: var(--color-hover);
+}
+
+@layer components {
+    .galeria-grid {
+        @apply py-8 grid grid-cols-1 m:grid-cols-3 gap-3 max-w-4xl mx-auto px-4 flex justify-center;
+    }
+
+    .galeria-img {
+        @apply w-55 h-60 object-cover rounded-lg;
+    }
+}
+
+.btn-whatsapp:hover {
+    color: var(--color-primary-dark)
+}
+
+.contenedor-bienvenida {
+    position: relative;
+    isolation: isolate;
+    color: white;
+    background-color: black;
+}
+
+.contenedor-bienvenida::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    background-image: url('./assets/img/anggybienvenida.png');
+    background-size: cover;
+    opacity: 0.4;
+    border-radius: 1rem;
+}
