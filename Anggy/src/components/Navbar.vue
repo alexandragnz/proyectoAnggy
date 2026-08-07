@@ -27,7 +27,7 @@
         <a       href="https://wa.me/940118168"
   target="_blank"
   rel="noopener noreferrer"
-  class="btn-whatsapp hidden justify-center m:flex m:flex-row m:items-center bg-transparent hover:bg-hover hover:text-amber-950 text-amber-50 border-2 border-hover gap-3 px-4 py-1.5 rounded-2xl  transition no-underline"
+  class="btn-whatsapp hidden justify-center m:flex m:flex-row m:items-center bg-transparent hover:bg-hover hover:text-amber-950 text-amber-50 border-2 border-hover gap-3 px-4 py-1.5 rounded-full  transition no-underline"
   style="position: static;"
 >
 

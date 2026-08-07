@@ -46,6 +46,12 @@
         <h3 class="mt-2 text-white">
           Clinica de ropa, bordados, transformación de textiles y más.
         </h3>
+                <a
+          href="./servicios"
+          class="inline-flex items-center transition  gap-2 mt-6  bg-hover  text-amber-50 hover:text-primary-dark active:bg-hover active:text-amber-50 font-medium px-6 py-3 transition-colors duration-200 rounded-full"
+        >
+          Conoce nuestros servicios
+        </a>
 
       </div>
     </section>
@@ -76,7 +82,7 @@
         <a
           href="./servicios"
           class="inline-flex items-center gap-2 mt-6  bg-hover  active:bg-secondary
-           transition  text-amber-50 active:bg-text-orange-950 font-medium px-6 py-3 rounded-full"
+           transition  text-amber-50 active:bg-text-orange-950 font-medium px-6 py-3 transition-colors duration-200 rounded-full"
         >
           Conoce nuestros servicios
         </a>
@@ -86,26 +92,20 @@
     <!-- Desktop -->
     <div class="hidden lg:flex w-3/4 mx-auto gap-10 items-center">
       <div class="flex gap-4 ">
-        <div class="relative rounded-xl overflow-hidden h-full min-w-[220px] max-h-[300px]">
+        <div class="relative rounded-xl overflow-hidden h-full  min-w-[200px] max-h-280px]">
   <img :src="imagenAntes" class="w-250 md:min-w-55 h-full object-cover" alt="Antes de la reparación" />
 </div>
-<div class="relative rounded-xl overflow-hidden h-full  min-w-[220px] max-h-[300px]">
+<div class="relative rounded-xl overflow-hidden h-full  min-w-[200px] max-h-280px]">
   <img :src="imagenDespues" class="w-250  md:min-w-55 h-full object-cover" alt="Después de la reparación" />
 </div>
       </div>
  
-      <div class="text-center">
-        <p class="text-white leading-relaxed">
-          Somos expertas en reparaciones de todo tipo de artículos de vestir.
+      <div class="">
+        <h2 class="text-white ">Somos expertas en reparaciones de todo tipo de artículos de vestir.</h2>
+        <p class="text-white ">
           Realizamos ajustes, bastas, restauraciones en cuero, aumento de tallas
           de pantalones, chaquetas, vestidos, entre otros.
         </p>
-        <a
-          href="./servicios"
-          class="inline-flex items-center gap-2 mt-6 active:bg-secondary bg-hover  text-amber-50 hover:text-orange-950 font-medium px-6 py-3 rounded-full"
-        >
-          Conoce nuestros servicios
-        </a>
       </div>
     </div>
  
@@ -132,7 +132,8 @@
       <div class="flex justify-center mt-5">
         <a
           href="./contacto"
-          class="inline-flex items-center gap-2 mt-6 active:bg-secondary bg-primary-dark text-amber-50 transition font-medium px-6 py-3 rounded-full"
+          class="inline-flex items-center gap-3 px-3 py-1.5 mt-6 rounded-full border-2 border-hover font-medium text-amber-50 bg-primary-dark
+          hover:bg-hover hover:text-primary-dark active:bg-primary-dark active:text-amber-50  active:border-primary-dark transition-colors duration-200"
         >
           Contáctanos
         </a>
@@ -153,9 +154,10 @@
         </p>
         <a
           href= "./contacto"
-          class="inline-flex items-center gap-2 mt-6 hover:bg-secondary bg-hover text-amber-50 hover:text-orange-950 font-medium px-6 py-3 transition  rounded-full"
+          class="inline-flex items-center gap-3 px-3 py-1.5 mt-6 rounded-full border-2 border-hover font-medium text-amber-50 bg-primary-dark
+          hover:bg-hover hover:text-primary-dark active:bg-primary-dark active:text-amber-50  active:border-primary-dark transition-colors duration-200"
         >
-          Contáctanos
+          <span class="px-1.5">Contáctanos</span>
         </a>
       </div>
  
