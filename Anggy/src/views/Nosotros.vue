@@ -63,6 +63,7 @@ import img1 from '../assets/img/nosotros1.webp'
 import img2 from '../assets/img/nosotros2.webp'
 import img3 from '../assets/img/nosotros3.webp'
 import img4 from '../assets/img/nosotrosmobile.webp'
+import img5 from '../assets/img/nosotrosmobile1.webp'
 
 const imagenes = [
   { src: img5, alt: 'Anggy trabajando en el taller' },
