@@ -59,11 +59,11 @@ useHead({
 })
 
 import { ref, onMounted, onUnmounted } from 'vue'
-import img1 from '../assets/img/nosotros1.png'
+import img1 from '../assets/img/nosotros1.webp'
 import img2 from '../assets/img/nosotros2.webp'
-import img3 from '../assets/img/nosotros3.png'
-import img4 from '../assets/img/nosotrosmobile.png'
-import img5 from '../assets/img/nosotrosmobile1.png'
+import img3 from '../assets/img/nosotros3.webp'
+import img4 from '../assets/img/nosotrosmobile.webp'
+import img5 from '../assets/img/nosotrosmobile1.webp'
 
 const imagenes = [
   { src: img5, alt: 'Anggy trabajando en el taller' },

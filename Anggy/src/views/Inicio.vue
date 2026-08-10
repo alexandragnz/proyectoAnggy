@@ -204,9 +204,9 @@ defineProps({
 
 
 
-import imagenTienda from '../assets/img/fachada.png'
-import imagenAntes from '../assets/img/antes.png'
-import imagenDespues from '../assets/img/despues.png'
+import imagenTienda from '../assets/img/fachada.webp'
+import imagenAntes from '../assets/img/antes.webp'
+import imagenDespues from '../assets/img/despues.webp'
 import imagenSitial from '../assets/img/sitialanggy.webp'
-import imagenBienvenida from '../assets/img/anggybienvenida.png'
+import imagenBienvenida from '../assets/img/anggybienvenida.webp'
 </script>

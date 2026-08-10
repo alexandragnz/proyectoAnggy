@@ -70,6 +70,6 @@ useHead({
     { property: 'og:description', content: 'Contáctanos para tus arreglos y confección a medida en Santiago centro.' },
   ]
 })
-import imagenTienda from '../assets/img/anggycontacto.png'
+import imagenTienda from '../assets/img/anggycontacto.webp'
 const mapaUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3900198671095!2d-70.6508582!3d-33.4391439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5ec9bec47c5%3A0xd71f07c0a59695ac!2sAnggy%20costuras!5e0!3m2!1ses-419!2scl!4v1784956924607!5m2!1ses-419!2scl"
 </script>

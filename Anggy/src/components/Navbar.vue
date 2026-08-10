@@ -78,7 +78,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import logo from '../assets/img/anggylogo.png'
+import logo from '../assets/img/anggylogo.webp'
 
 const menuAbierto = ref(false)
 const scrolled = ref(false)

@@ -145,7 +145,7 @@ nav .font-arima a:hover {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-    background-image: url('./assets/img/anggybienvenida.png');
+    background-image: url('./assets/img/anggybienvenida.webp');
     background-size: cover;
     opacity: 0.4;
     border-radius: 1rem;

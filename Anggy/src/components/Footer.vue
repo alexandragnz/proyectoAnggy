@@ -36,5 +36,5 @@
 </template>
 
 <script setup>
-import logo from '../assets/img/anggylogo.png'
+import logo from '../assets/img/anggylogo.webp'
 </script>
