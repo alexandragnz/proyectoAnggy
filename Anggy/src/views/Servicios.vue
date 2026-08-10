@@ -70,7 +70,7 @@ useHead({
 import { ref, onMounted, onUnmounted } from 'vue'
 
 // Imagen sección 1
-import imagenNuestrosServicios from '../assets/img/anggymaquina.jpeg'
+import imagenNuestrosServicios from '../assets/img/anggymaquina.webp'
 
 // Imágenes slider sección 2
 import slider1 from '../assets/img/anggyservicios.webp'
@@ -78,12 +78,12 @@ import slider2 from '../assets/img/anggyservicios2.webp'
 import slider3 from '../assets/img/anggyservicios3.webp'
 
 // Íconos servicios
-import iconoTransformacion from '../assets/icons/reparar.webp'
-import iconoCuero from '../assets/icons/cuero.webp'
-import iconoPluma from '../assets/icons/pluma.webp'
-import iconoCremallera from '../assets/icons/cremallera.webp'
-import iconoBoton from '../assets/icons/boton.webp'
-import iconoClinica from '../assets/icons/costura.webp'
+import iconoTransformacion from '../assets/icons/reparar.png'
+import iconoCuero from '../assets/icons/cuero.png'
+import iconoPluma from '../assets/icons/pluma.png'
+import iconoCremallera from '../assets/icons/cremallera.png'
+import iconoBoton from '../assets/icons/boton.png'
+import iconoClinica from '../assets/icons/costura.png'
 
 const imagenesSlider = [slider1, slider2, slider3]
 const imagenActual = ref(0)
