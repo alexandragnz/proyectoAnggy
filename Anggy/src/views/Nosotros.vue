@@ -1,5 +1,5 @@
 <template>
-    <section class="max-w-6xl px-4 py-15 m:py-12 mx-auto text-center">
+    <section class="max-w-6xl px-4 py-12 s:py-8 mx-auto text-center">
         <h1 class=" text-white px-5 ">Nuestra Historia: Pasión, Detalle y Confección en el Corazón de Santiago</h1>
         <p class=" text-white">Tras una valiosa trayectoria en el emprendimiento, Anggy redescubrió en el arte de la costura su auténtica pasión.
 
@@ -14,20 +14,20 @@ Cada ajuste, basta y confección se ejecuta con la máxima dedicación, con el p
   </div>
 
   <!-- Slider automático mobile -->
-  <div class="m:hidden relative w-full h-50 overflow-hidden rounded-lg">
+  <div class="m:hidden w-100 mx-auto relative h-80 overflow-hidden rounded-lg">
     <Transition name="fade" mode="out-in">
       <img
         :key="imagenActual"
         :src="imagenes[imagenActual].src"
         :alt="imagenes[imagenActual].alt"
-        class="w-full  h-50 w-30 object-cover object-center rounded-lg"
+        class="w-full p-1  h-100 object-cover object-bottom rounded-lg"
       />
     </Transition>
 
   </div>
     </section>
-    <section class="pb-15 max-w-6xl  mx-auto text-center">
-      <h2 class="text-amber-50 pb-5 ">Misión</h2>
+    <section class="pb-15 max-w-6xl mx-auto text-center">
+      <h2 class="text-amber-50 pb-2 ">Misión</h2>
       <p class=" text-white">Brindar un servicio integral de modistería en el corazón de Santiago, distinguido por la rigurosidad en los detalles, la excelencia técnica y una cálida atención personalizada.
 Nos dedicamos a transformar cada requerimiento textil mediante soluciones especializadas y creativas, devolviendo la armonía, el calce perfecto y la distinción a cada prenda, para convertir la experiencia del vestir en un auténtico estado de confort y bienestar.</p>
       <h2 class="text-amber-50 px-5 ">Visión</h2>
@@ -35,11 +35,14 @@ Nos dedicamos a transformar cada requerimiento textil mediante soluciones especi
 Aspiramos a liderar un modelo de emprendimiento con sentido humano y sostenible, donde cada puntada sea reflejo de precisión, durabilidad y un compromiso genuino con el valor del vestir impecable y el bienestar de nuestra comunidad.</p>
     </section>
     <section class="bg-primary-dark p-15 w-full  mx-auto text-center">
-      <h3 class="text-amber-50 pb-5">Estamos a pasos del metro plaza de Armas.</h3>
-      <h4 class=" text-white">Encuéntranos en Huérfanos #903 <br>
-Diagonal pasaje Matte local 965-967 comuna de Santiago.<br>
-Teléfono: 9 89014744.</h4>
-<a href="./servicios" class="items-center bg-transparent hover:bg-hover hover:text-amber-950 text-white border-2 border-hover gap-3 px-5 py-1.5 rounded-2xl text-sm font-medium transition no-underline"> Conoce nuestros servicios aquí</a>
+      <h3 class="text-amber-50 pb-4">Estamos a pasos del metro plaza de Armas.</h3>
+      <div class="flex flex-col  text-white mx-auto">
+        <p>Encuéntranos en Huérfanos #903<br>
+        Diagonal pasaje Matte local 965-967 comuna de Santiago.<br>
+        Teléfono: 9 89014744.</p>
+        <a href="./servicios" class=" max-w-60 mx-auto items-center bg-transparent hover:bg-hover hover:text-primary-dark text-white border-2 border-hover gap-3 px-5 py-1.5 rounded-2xl text-sm font-medium transition no-underline"> Conoce nuestros servicios aquí</a>
+
+      </div>
 
     </section>
 
