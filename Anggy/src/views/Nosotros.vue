@@ -15,25 +15,25 @@ Anggy Costuras nace como un taller de costurería con una visión integral, conc
       <img :src="img1" alt="Anggy trabajando en el taller" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
       <img :src="img2" alt="Interior de la tienda Anggy Costuras" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
       <img :src="img3" alt="Detalle de confección artesanal" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img4" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img5" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img6" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img7" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img8" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img9" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img4" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img5" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img6" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img7" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img8" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img9" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
     </div>
 
     <!-- Segundo bloque idéntico para el bucle infinito -->
     <div class="flex gap-3 md:gap-4 shrink-0" aria-hidden="true">
-      <img :src="img1" alt="Anggy trabajando en el taller" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img2" alt="Interior de la tienda Anggy Costuras" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img3" alt="Detalle de confección artesanal" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img4" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img5" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img6" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img7" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img8" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
-      <img :src="img9" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img1" alt="Anggy trabajando en el taller" class="w-40 h-32 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img2" alt="Interior de la tienda Anggy Costuras" class="w-40 h-32 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img3" alt="Detalle de confección artesanal" class="w-40 h-32 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img4" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img5" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img6" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img7" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img8" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
+      <img :src="img9" alt="..." class="w-55 h-45 md:w-64 md:h-65 object-cover rounded-xl shadow-md" />
     </div>
 
   </div>
