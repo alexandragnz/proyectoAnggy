@@ -4,27 +4,43 @@
         <p class=" text-white">Tras una valiosa trayectoria en el emprendimiento, Anggy redescubrió en el arte de la costura su auténtica pasión.
 
 Anggy Costuras nace como un taller de costurería con una visión integral, concebido como un espacio donde la atención al detalle y la vocación de servicio son la prioridad.
+</p>
+    <!-- Slider automático-->
+<div class="overflow-hidden w-full relative bg-transparent py-4">
+  <!-- Slider -->
+  <div class="animate-section flex gap-3 md:gap-4 items-center">
+    
+    <!-- Primer bloque de imágenes -->
+    <div class="flex gap-3 md:gap-4 shrink-0">
+      <img :src="img1" alt="Anggy trabajando en el taller" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img2" alt="Interior de la tienda Anggy Costuras" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img3" alt="Detalle de confección artesanal" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img4" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img5" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img6" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img7" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img8" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img9" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+    </div>
 
-Cada ajuste, basta y confección se ejecuta con la máxima dedicación, con el propósito de otorgar una nueva vida a cada prenda y devolver a nuestros clientes el confort, la elegancia y la confianza a través de su vestuario.</p>
-    <!-- Galería grid desktop -->
-  <div class="hidden m:grid galeria-grid">
-    <img :src="img1" alt="Anggy trabajando en el taller" class="galeria-img" />
-    <img :src="img2" alt="Interior de la tienda Anggy Costuras" class="galeria-img" />
-    <img :src="img3" alt="Detalle de confección artesanal" class="galeria-img" />
+    <!-- Segundo bloque idéntico para el bucle infinito -->
+    <div class="flex gap-3 md:gap-4 shrink-0" aria-hidden="true">
+      <img :src="img1" alt="Anggy trabajando en el taller" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img2" alt="Interior de la tienda Anggy Costuras" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img3" alt="Detalle de confección artesanal" class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img4" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img5" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img6" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img7" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img8" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+      <img :src="img9" alt="..." class="w-40 h-32 md:w-64 md:h-60 object-cover rounded-xl shadow-md" />
+    </div>
+
   </div>
+</div>
+<p class="hidden md:block text-white">Cada ajuste, basta y confección se ejecuta con la máxima dedicación, con el propósito de otorgar una nueva vida a cada prenda y devolver a nuestros clientes el confort, la elegancia y la confianza a través de su vestuario.</p>
 
-  <!-- Slider automático mobile -->
-  <div class="m:hidden w-100 mx-auto relative h-80 overflow-hidden rounded-lg">
-    <Transition name="fade" mode="out-in">
-      <img
-        :key="imagenActual"
-        :src="imagenes[imagenActual].src"
-        :alt="imagenes[imagenActual].alt"
-        class="w-full p-1  h-100 object-cover object-bottom rounded-lg"
-      />
-    </Transition>
 
-  </div>
     </section>
     <section class="pb-15 max-w-6xl mx-auto text-center">
       <h2 class="text-amber-50 pb-2 ">Misión</h2>
@@ -65,8 +81,12 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import img1 from '../assets/img/nosotros1.webp'
 import img2 from '../assets/img/nosotros2.webp'
 import img3 from '../assets/img/nosotros3.webp'
-import img4 from '../assets/img/nosotrosmobile.webp'
-import img5 from '../assets/img/nosotrosmobile1.webp'
+import img4 from '../assets/img/modistacontraluz.webp'
+import img5 from '../assets/img/nosotrosmobile.webp'
+import img6 from '../assets/img/nosotrosmobile1.webp'
+import img7 from '../assets/img/modistamaquina.webp'
+import img8 from '../assets/img/cosiendo.webp'
+import img9 from '../assets/img/fachadanosotros.webp'
 
 const imagenes = [
   { src: img5, alt: 'Anggy trabajando en el taller' },

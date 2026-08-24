@@ -1,25 +1,18 @@
 <template>
   <div class=" max-w-6xl px-4 py-8  mx-auto ">
-  <section class="seccion-contenido mx-auto p-3 rounded-lg bg-primary/90 rounded-2xl w-3/4">
-  <h1 class="text-center text-primary-dark pt-1 ">Nuestros servicios</h1>
-<div class="grid grid-cols-1 m:grid-cols-2 gap-6 m:gap-10 ">
-
-  <div class="mx-auto order-1 m:order-2">
-    <img
-      :src="imagenNuestrosServicios"
-      alt="Taller de costura Anggy"
-      class="max-w-sm m:max-w-md h-56 s:h-72 m:h-96 m:w-5/6 object-cover rounded-t-full shadow-lg"
-    />
+  <section data-v-dc1d6637="" class="seccion-contenido mx-auto p-3 rounded-2xl bg-primary/90 w-[100%] md:w-3/4">
+  <h1 data-v-dc1d6637="" class="text-center text-primary-dark pt-1">Nuestros servicios</h1>
+  <div data-v-dc1d6637="" class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+    <div data-v-dc1d6637="" class="mx-auto order-1 md:order-2">
+      <img data-v-dc1d6637="" src="/src/assets/img/anggymaquina.webp" alt="Taller de costura Anggy" class="max-w-sm md:max-w-md h-56 sm:h-72 md:h-96 md:w-5/6 object-cover rounded-t-full shadow-lg">
+    </div>
+    <div data-v-dc1d6637="" class="max-w-xl rounded-2xl p-6 sm:p-8 md:p-10 order-2 md:order-1">
+      <p data-v-dc1d6637="" class="text-sm sm:text-base md:text-lg text-primary-dark"> 
+        Dedicadas a dar vida a tus prendas favoritas o arreglar ese traje que tienes sin poder usar. Con años de experiencia en costura y confección, en Anggy Costuras trabajamos con dedicación y precisión en cada proyecto. Ya sea un ajuste sencillo o una transformación completa, ponemos nuestro oficio al servicio de tus prendas, garantizando resultados de calidad y un trato cercano en cada etapa. 
+      </p>
+    </div>
   </div>
-
-  <div class="max-w-xl rounded-2xl p-6 s:p-8 m:p-10 order-2 m:order-1 ">
-    <p class=" text-sm s:text-base m:text-lg text-primary-dark">
-      Dedicadas a dar vida a tus prendas favoritas o arreglar ese traje que tienes sin poder usar. Con años de experiencia en costura y confección, en Anggy Costuras trabajamos con dedicación y precisión en cada proyecto. Ya sea un ajuste sencillo o una transformación completa, ponemos nuestro oficio al servicio de tus prendas, garantizando resultados de calidad y un trato cercano en cada etapa.
-    </p>
-  </div>
-
-</div>
-  </section>
+</section>
   <section class="py-16  w-3/4 mx-auto">
     <div class="contenedor">
       <h2 class=" text-white text-center mb-10">Lo que hacemos por ti</h2>
