@@ -1,4 +1,6 @@
 <template>
+    <title>Taller de costuras, modisetería y arreglos de Ropa en Santiago Centro, diagonal pasaje Matte por Huérfano. | Anggy</title>
+    <meta name="description" content="Taller de servicios de costura y arreglos de ropa en Santiago Centro. Bastas, ajustes, arreglos de cierre, reparación de prendas de cuero y pluma, transformación de prendas...">
   <div class="py-10 w-full max-w-9/10 mx-auto flex flex-col gap-10">
 
     <!-- Mobile -->
@@ -173,10 +175,10 @@
 
 <script setup>
 
-import { useHead } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
 
 useHead({
-  title: 'Anggy Costuras - Costuras y arreglos de ropa',
+  title: 'Anggy Costuras - Taller de costuras y arreglos de ropa',
   meta: [
     { name: 'description', content: 'Local de costuras en Santiago Centro. Bastas, ajustes de ropa, arreglos en cuero, arreglos en pluma, reposición de botones, cambios de cierre, transformación textil, .' },
     { property: 'og:title', content: 'Anggy Costuras - Costuras y arreglos de ropa' },

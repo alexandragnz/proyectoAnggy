@@ -1,5 +1,5 @@
 <template>
-    <section class="max-w-6xl px-4 py-12 s:py-8 mx-auto text-center">
+    <section class="max-w-6xl px-4 py-6 lg:py-10 s:py-8 mx-auto text-center">
         <h1 class=" text-white px-5 ">Nuestra Historia: Pasión, Detalle y Confección en el Corazón de Santiago</h1>
         <p class=" text-white">Tras una valiosa trayectoria en el emprendimiento, Anggy redescubrió en el arte de la costura su auténtica pasión.
 
@@ -42,7 +42,7 @@ Anggy Costuras nace como un taller de costurería con una visión integral, conc
 
 
     </section>
-    <section class="pb-15 max-w-6xl mx-auto text-center">
+    <section class="pb-15 px-3 md:px-0 max-w-6xl mx-auto text-center">
       <h2 class="text-amber-50 pb-2 ">Misión</h2>
       <p class=" text-white">Brindar un servicio integral de modistería en el corazón de Santiago, distinguido por la rigurosidad en los detalles, la excelencia técnica y una cálida atención personalizada.
 Nos dedicamos a transformar cada requerimiento textil mediante soluciones especializadas y creativas, devolviendo la armonía, el calce perfecto y la distinción a cada prenda, para convertir la experiencia del vestir en un auténtico estado de confort y bienestar.</p>
@@ -66,7 +66,7 @@ Aspiramos a liderar un modelo de emprendimiento con sentido humano y sostenible,
 
 <script setup>
 
-import { useHead } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
 
 useHead({
   title: 'Nosotros - Anggy Costuras',

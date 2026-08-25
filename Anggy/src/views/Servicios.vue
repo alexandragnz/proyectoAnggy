@@ -50,14 +50,14 @@
 </template>
 
 <script setup>
-import { useHead } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
 
 useHead({
   title: 'Servicios - Anggy costuras',
   meta: [
-    { name: 'description', content: 'Arreglos de ropa, bastas, arreglos prendas de cuero y pluma y más en Santiago centro.' },
+    { name: 'description', content: 'Costuras y arreglos de ropa, bastas, arreglos prendas de cuero y pluma y más en Santiago centro.' },
     { property: 'og:title', content: 'Servicios - Anggy costuras' },
-    { property: 'og:description', content: 'Arreglos de ropa, ajustes y basta de ropa, arreglos prendas de cuero y pluma y más en Santiago centro.' },
+    { property: 'og:description', content: 'Costuras y Arreglos de ropa, ajustes y basta de ropa, arreglos prendas de cuero y pluma y más, en Santiago centro diagonal pasaje Matte.' },
   ]
 })
 import { ref, onMounted, onUnmounted } from 'vue'
