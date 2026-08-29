@@ -1,12 +1,16 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import { createHead } from '@unhead/vue/client'
-import './style.css'
+import App from "./App.vue";
+import "./style.css";
+import { createSSRApp } from "vue";
+import { createRouterInstance } from "./router";
+import { createHead } from "@unhead/vue/client";
 
-const head = createHead()
-const app = createApp(App)
+export function createApp() {
+  const app = createSSRApp(App);
+  const router = createRouterInstance();
+  const head = createHead();
 
-app.use(router)
-app.use(head)
-app.mount('#app')
+  app.use(router);
+  app.use(head);
+
+  return { app, router, head };
+}
