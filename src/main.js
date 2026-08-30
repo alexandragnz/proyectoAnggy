@@ -1,7 +1,7 @@
 import App from "./App.vue";
 import "./style.css";
 import { createSSRApp } from "vue";
-import { createRouterInstance } from "./router";
+import { createRouterInstance } from "./router/index.js";
 import { createHead } from "@unhead/vue/client";
 
 export function createApp() {
