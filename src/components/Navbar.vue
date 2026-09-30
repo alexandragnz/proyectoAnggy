@@ -41,10 +41,10 @@
       <!-- atajo whatsapp -->
 
       <a
-        href="https://wa.me/940118168"
+        href="https://wa.me/940119168"
         target="_blank"
         rel="noopener noreferrer"
-        class="btn-whatsapp hidden justify-center m:flex m:flex-row m:items-center bg-transparent hover:bg-hover hover:text-amber-950 text-amber-50 border-2 border-hover gap-3 px-4 py-1.5 rounded-full transition no-underline"
+        class="btn-whatsapp font-medium hidden justify-center m:flex m:flex-row m:items-center bg-hover  hover:text-bg-dark text-amber-50 border-2 border-hover gap-3 px-4 py-1.5 rounded-full transition-colors duration-400"
         style="position: static"
       >
         <span>Escríbenos</span>
@@ -55,7 +55,7 @@
         />
       </a>
 
-      <!-- Botón hamburguesa (solo mobile) -->
+      <!-- Botón hamburguesa (mobile) -->
       <button
         @click="menuAbierto = !menuAbierto"
         class="m:hidden p-2 rounded-md hover:bg-hover focus:outline-none"

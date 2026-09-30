@@ -9,61 +9,83 @@
   />
   <div class="py-10 w-full max-w-9/10 mx-auto flex flex-col gap-10">
     <!-- Mobile -->
-    <section class="lg:hidden relative mx-4 h-80 rounded-2xl overflow-hidden">
-      <img
-        :src="imagenBienvenida"
-        class="absolute inset-0 w-full h-full object-cover"
-        alt="Fachada tienda ANGGY"
-      />
-      <!-- Overlay -->
-      <div
-        class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/50 to-transparent"
-      ></div>
+<!-- Mobile (Galería interactiva automática) -->
+<section class="lg:hidden relative mx-4 h-80 rounded-2xl overflow-hidden shadow-xl">
+  
+  <!-- Galería de imágenes automática de fondo -->
+  <Transition name="fade">
+    <img
+      :key="currentImageIndex"
+      :src="imagenesTienda[currentImageIndex]"
+      class="absolute inset-0 w-full h-full object-cover z-0"
+      alt="Galería de imágenes del taller ANGGY costuras"
+    />
+  </Transition>
 
-      <div class="absolute bottom-0 left-0 right-0 p-5">
-        <h1 class="text-2xl font-bold text-white text-center leading-snug">
-          ANGGY reparaciones y costuras
-        </h1>
-        <h3 class="mt-2 text-sm text-gray-200 text-center">
-          Clinica de ropa, bordados, transformación de textiles y más.
-        </h3>
-        <a
-          href="./contacto"
-          class="flex items-center mx-auto justify-center gap-2 mt-6 bg-hover text-amber-50 active:bg-:text-orange-950 font-medium w-3/4 px-6 py-3 rounded-full transition no-underline"
-        >
-          Nuestra ubicación
-        </a>
-      </div>
-    </section>
+  <!-- Capa Overlay oscura (va por encima de la imagen para dar legibilidad al texto) -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/70 to-black/45 z-10"></div>
 
-    <!--Desktop -->
-    <section
-      class="hidden lg:flex contenedor-bienvenida w-3/4 mx-auto justify-center h-120 rounded-2xl"
+  <!-- Contenido frontal (Textos y Botón de acción) -->
+  <div class="relative z-20 flex flex-col justify-end h-full p-5">
+    <h1 class="text-2xl font-bold text-white text-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] leading-snug">
+      ANGGY reparaciones y costuras
+    </h1>
+    <h3 class="mt-2 text-sm text-gray-200 text-center drop-shadow-lg">
+      Clínica de ropa, bordados, transformación de textiles y más.
+    </h3>
+    <a 
+      href="./contacto" 
+      class="btn-accion text-sm py-3 mt-4 justify-center w-3/4 mx-auto"
     >
-      <!-- Columna izquierda - fachada anggy -->
-      <div class="p-5">
-        <img
-          :src="imagenTienda"
-          class="h-100 mx-auto border-orange-200 min-w-[220px] border-1 rounded-full object-cover"
-          alt="Fachada tienda ANGGY"
-        />
-      </div>
+      Nuestra ubicación
+    </a>
+  </div>
 
-      <!-- Columna derecha - texto bienvenida -->
-      <div class="text-center my-auto px-8">
-        <h1 class="text-4xl font-bold">ANGGY reparaciones y costuras</h1>
-        <h3 class="mt-2 text-white">
-          Clinica de ropa, bordados, transformación de textiles y más.
-        </h3>
-        <a
-          href="./servicios"
-          class="inline-flex items-center transition gap-2 mt-6 bg-hover text-amber-50 hover:text-primary-dark active:bg-hover active:text-amber-50 font-medium px-6 py-3 transition-colors duration-200 rounded-full"
-        >
-          Conoce nuestros servicios
-        </a>
-      </div>
-    </section>
+</section>
 
+<!-- Desktop -->
+<section
+  class="hidden lg:flex relative contenedor-bienvenida w-3/4 mx-auto justify-center h-120 rounded-2xl overflow-hidden bg-cover bg-center shadow-2xl"
+  :style="{ backgroundImage: `url(${imagenFondoBienvenida})` }"
+>
+  <!-- Capa oscura/overlay sobre la imagen de fondo -->
+  <div class="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
+
+  <!-- Contenido relativo para quedar por encima del fondo -->
+  <div class="relative z-10 flex w-full h-full items-center justify-between px-8">
+    
+    <!-- Columna izquierda: Galería automática ovalada -->
+    <div class="p-5 flex items-center justify-center shrink-0">
+      <div class="relative h-100 w-64 overflow-hidden rounded-full border-2 border-amber-200/50 shadow-2xl">
+        <Transition name="fade">
+          <img
+            :key="currentImageIndex"
+            :src="imagenesTienda[currentImageIndex]"
+            class="h-full w-full object-cover"
+            alt="Galería de imágenes del taller ANGGY costuras"
+          />
+        </Transition>
+      </div>
+    </div>
+
+    <!-- Columna derecha: Texto de bienvenida -->
+    <div class="text-center my-auto px-8 w-full">
+      <h1 class="text-4xl lg:text-5xl font-bold text-white tracking-wide">
+        ANGGY reparaciones y costuras
+      </h1>
+      <h3 class="mt-4 text-lg text-gray-200 font-light">
+        Clínica de ropa, bordados, transformación de textiles y más.
+      </h3>
+      <a
+        href="./servicios"
+        class="btn-accion"
+      >
+        Conoce nuestros servicios
+      </a>
+    </div>
+
+  </div>
+</section>
     <section>
       <!-- Mobile -->
       <div class="lg:hidden px-4">
@@ -73,14 +95,14 @@
             <img
               :src="imagenAntes"
               class="w-full h-full object-cover"
-              alt="Antes de la reparación"
+              alt="Chaqueta de cuero antes de la reparación en taller de Anggy"
             />
           </div>
           <div class="rounded-xl overflow-hidden min-h-[120px] mt-4 shrink-0">
             <img
               :src="imagenDespues"
               class="w-full h-full object-cover"
-              alt="Después de la reparación"
+              alt="Chaqueta de cuero después de la reparación en taller de Anggy"
             />
           </div>
         </div>
@@ -94,12 +116,13 @@
         <div class="flex justify-center mt-5">
           <a
             href="./servicios"
-            class="inline-flex items-center gap-2 mt-6 bg-hover active:bg-secondary transition text-amber-50 active:bg-text-orange-950 font-medium px-6 py-3 transition-colors duration-200 rounded-full"
+            class="btn-accion"
           >
             Conoce nuestros servicios
           </a>
         </div>
       </div>
+      
 
       <!-- Desktop -->
       <div class="hidden lg:flex w-3/4 mx-auto gap-10 items-center">
@@ -110,7 +133,7 @@
             <img
               :src="imagenAntes"
               class="w-250 md:min-w-55 h-full object-cover"
-              alt="Antes de la reparación"
+              alt="Chaqueta de cuero antes de la reparación en el taller Anggy costuras"
             />
           </div>
           <div
@@ -119,7 +142,7 @@
             <img
               :src="imagenDespues"
               class="w-250 md:min-w-55 h-full object-cover"
-              alt="Después de la reparación"
+              alt="Chaqueta de cuero antes de la reparación en el taller Anggy costuras"
             />
           </div>
         </div>
@@ -149,7 +172,7 @@
           <img
             :src="imagenSitial"
             class="w-full h-full object-cover"
-            alt="Sitial y mesa de trabajo"
+            alt="Sitial y mesa de trabajo del taller de costuras de Anggy"
           />
         </div>
 
@@ -164,7 +187,7 @@
         <div class="flex justify-center mt-5">
           <a
             href="./contacto"
-            class="inline-flex items-center gap-3 px-3 py-1.5 mt-6 rounded-full border-2 border-hover font-medium text-amber-50 bg-primary-dark hover:bg-hover hover:text-primary-dark active:bg-primary-dark active:text-amber-50 active:border-primary-dark transition-colors duration-200"
+            class="inline-flex items-center gap-3 px-6.5 py-3 mt-6 rounded-full font-medium text-amber-50 bg-primary-dark hover:bg-secondary  active:bg-primary-dark active:text-amber-50 active:border-primary-dark transition-colors duration-400"
           >
             Contáctanos
           </a>
@@ -187,7 +210,7 @@
           </p>
           <a
             href="./contacto"
-            class="inline-flex items-center gap-3 px-3 py-1.5 mt-6 rounded-full border-2 border-hover font-medium text-amber-50 bg-primary-dark hover:bg-hover hover:text-primary-dark active:bg-primary-dark active:text-amber-50 active:border-primary-dark transition-colors duration-200"
+            class="inline-flex items-center gap-3 px-6.5 py-3 mt-6 rounded-full font-medium text-amber-50 bg-primary-dark hover:bg-secondary  active:bg-primary-dark active:text-amber-50 active:border-primary-dark transition-colors duration-400"
           >
             <span class="px-1.5">Contáctanos</span>
           </a>
@@ -197,7 +220,7 @@
           <img
             :src="imagenSitial"
             class="w-full min-h-[200px] h-[480px] object-cover"
-            alt="Sitial y mesa de trabajo"
+            alt="Sitial y mesa de trabajo del taller Anggy costuras"
           />
         </div>
       </div>
@@ -206,15 +229,17 @@
 </template>
 
 <script setup>
+  import { ref, onMounted, onUnmounted } from "vue";
   import { useHead } from "@unhead/vue";
 
+  // SEO y metadatos
   useHead({
     title: "Anggy Costuras - Taller de costuras y arreglos de ropa",
     meta: [
       {
         name: "description",
         content:
-          "Local de costuras en Santiago Centro. Bastas, ajustes de ropa, arreglos en cuero, arreglos en pluma, reposición de botones, cambios de cierre, transformación textil, .",
+          "Local de costuras en Santiago Centro. Bastas, ajustes de ropa, arreglos en cuero, arreglos en pluma, reposición de botones, cambios de cierre y transformación textil.",
       },
       {
         property: "og:title",
@@ -228,9 +253,61 @@
     ],
   });
 
-  import imagenTienda from "../assets/img/fachada.webp";
-  import imagenAntes from "../assets/img/antes.webp";
-  import imagenDespues from "../assets/img/despues.webp";
-  import imagenSitial from "../assets/img/sitialanggy.webp";
-  import imagenBienvenida from "../assets/img/anggybienvenida.webp";
+  import imagenFondoBienvenida from "../assets/img/anggyCosturera.webp";
+  // Importación de imágenes de la tienda
+  import imagenHilos from "../assets/img/hilosdeCoserAnggy.webp";
+  import imagenRopa from "../assets/img/ropaColgadaAnggy.webp";
+  import imagenProbadores from "../assets/img/probadoresdeRopaAnggy.webp";
+  import imagenMaquina from "../assets/img/maquinadeCoserAnggy.webp";
+  import imagenFachada from "../assets/img/fachadaTallerdeCosturaAnggy.webp";
+
+  // Otras imágenes del sitio
+  import imagenAntes from "../assets/img/antesChaquetaCuero.webp";
+  import imagenDespues from "../assets/img/despuesChaquetaCuero.webp";
+  import imagenSitial from "../assets/img/sitialTallerdeCosturas.webp";
+
+  // Array de la galería
+  const imagenesTienda = ref([
+    imagenFachada,
+    imagenHilos,
+    imagenRopa,
+    imagenProbadores,
+    imagenMaquina,
+  ]);
+
+const currentImageIndex = ref(0)
+let timer = null
+
+onMounted(() => {
+  // Asegurarse de tener elementos antes de iniciar el intervalo
+  if (imagenesTienda.value.length > 0) {
+    timer = setInterval(() => {
+      currentImageIndex.value = (currentImageIndex.value + 1) % imagenesTienda.value.length
+    }, 3500)
+  }
+})
+
+onUnmounted(() => {
+  if (timer) clearInterval(timer)
+})
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.8s ease-in-out;
+}
+
+.fade-leave-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

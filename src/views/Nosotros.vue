@@ -17,47 +17,47 @@
         <div class="flex gap-3 md:gap-4 shrink-0">
           <img
             :src="img1"
-            alt="Anggy trabajando en el taller"
+            alt="Anggy trabajando en el taller de costura"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img2"
-            alt="Interior de la tienda Anggy Costuras"
+            alt="Interior del taller Anggy Costuras"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img3"
-            alt="Detalle de confección artesanal"
+            alt="Detalle de confección de ropa en taller de Anggy costuras"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img4"
-            alt="..."
+            alt="Modista costurera en el taller de costuras de Anggy"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img5"
-            alt="..."
+            alt="Modista costurera preparando las basta de pantalón en taller de Anggy costuras"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img6"
-            alt="..."
+            alt="Maquina de coser del taller de costuras de Anggy"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img7"
-            alt="..."
+            alt="Modista costurera cosiendo en la maquina en el taller de Anggy costuras"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img8"
-            alt="..."
+            alt="Modista costurera cosiendo un botón de una chaqueta en el taller de Anggy costuras"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img9"
-            alt="..."
+            alt="Fachada del taller de costuras de Anggy en Santiago centro"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
         </div>
@@ -66,47 +66,47 @@
         <div class="flex gap-3 md:gap-4 shrink-0" aria-hidden="true">
           <img
             :src="img1"
-            alt="Anggy trabajando en el taller"
+            alt="Anggy trabajando en el taller de costuras"
             class="w-40 h-32 md:w-64 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img2"
-            alt="Interior de la tienda Anggy Costuras"
+            alt="Interior del taller Anggy Costuras"
             class="w-40 h-32 md:w-64 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img3"
-            alt="Detalle de confección artesanal"
+            alt="Detalle de confección de ropa en taller de Anggy costuras"
             class="w-40 h-32 md:w-64 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img4"
-            alt="..."
+            alt="Modista costurera en el taller de costuras de Anggy"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img5"
-            alt="..."
+            alt="Costurera modista preparando las basta de pantalón en taller de Anggy costuras"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img6"
-            alt="..."
+            alt="Maquina de coser del taller de costuras de Anggy"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img7"
-            alt="..."
+            alt="Modista costurera cosiendo en la maquina en el taller de Anggy costuras"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img8"
-            alt="..."
+            alt="Modista costurera cosiendo un botón de una chaqueta en el taller de Anggy costuras"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
           <img
             :src="img9"
-            alt="..."
+            alt="Fachada del taller de costuras de Anggy en Santiago centro"
             class="w-50 h-45 md:w-65 md:h-65 object-cover rounded-xl shadow-md"
           />
         </div>
@@ -152,7 +152,7 @@
       </p>
       <a
         href="./servicios"
-        class="max-w-60 mx-auto items-center bg-transparent hover:bg-hover hover:text-primary-dark text-white border-2 border-hover gap-3 px-5 py-1.5 rounded-2xl text-sm font-medium transition no-underline"
+        class="max-w-70 mx-auto  bg-hover hover:text-primary-dark text-white px-6 py-2.5 rounded-2xl  font-medium transition-colors duration-400 no-underline"
       >
         Conoce nuestros servicios aquí</a
       >
@@ -180,15 +180,15 @@
   });
 
   import { ref, onMounted, onUnmounted } from "vue";
-  import img1 from "../assets/img/nosotros1.webp";
-  import img2 from "../assets/img/nosotros2.webp";
-  import img3 from "../assets/img/nosotros3.webp";
-  import img4 from "../assets/img/modistacontraluz.webp";
-  import img5 from "../assets/img/nosotrosmobile.webp";
-  import img6 from "../assets/img/nosotrosmobile1.webp";
+  import img1 from "../assets/img/modistamaquina.webp";
+  import img2 from "../assets/img/anggyAtencionTaller.webp";
+  import img3 from "../assets/img/anggyMedidadeRopa.webp";
+  import img4 from "../assets/img/maquinadeCosturas.webp";
+  import img5 from "../assets/img/modistacontraluz.webp";
+  import img6 from "../assets/img/anggyBasta.webp";
   import img7 from "../assets/img/modistamaquina.webp";
   import img8 from "../assets/img/cosiendo.webp";
-  import img9 from "../assets/img/fachadanosotros.webp";
+  import img9 from "../assets/img/fachadaTallerdeCosturaAnggy.webp";
 
   const imagenes = [
     { src: img5, alt: "Anggy trabajando en el taller" },

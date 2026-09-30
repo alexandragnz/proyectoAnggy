@@ -118,6 +118,9 @@ nav .font-arima a:hover {
 }
 
 @layer components {
+    .btn-accion {
+    @apply inline-flex items-center gap-2 mt-8 bg-hover active:bg-secondary text-white hover:bg-secondary font-medium px-8 py-3.5 transition-colors duration-400 rounded-full shadow-lg;
+  }
     .galeria-grid {
         @apply py-8 grid grid-cols-1 m:grid-cols-3 gap-3 max-w-4xl mx-auto px-4 flex justify-center;
     }
