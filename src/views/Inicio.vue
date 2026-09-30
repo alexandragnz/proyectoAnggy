@@ -8,8 +8,7 @@
     content="Taller de servicios de costura y arreglos de ropa en Santiago Centro. Bastas, ajustes, arreglos de cierre, reparación de prendas de cuero y pluma, transformación de prendas..."
   />
   <div class="py-10 w-full max-w-9/10 mx-auto flex flex-col gap-10">
-    <!-- Mobile -->
-<!-- Mobile (Galería interactiva automática) -->
+<!-- Mobile  -->
 <section class="lg:hidden relative mx-4 h-80 rounded-2xl overflow-hidden shadow-xl">
   
   <!-- Galería de imágenes automática de fondo -->
@@ -22,16 +21,16 @@
     />
   </Transition>
 
-  <!-- Capa Overlay oscura (va por encima de la imagen para dar legibilidad al texto) -->
+  <!-- Capa overlay oscura -->
   <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/70 to-black/45 z-10"></div>
 
-  <!-- Contenido frontal (Textos y Botón de acción) -->
+  <!-- Contenido frontal -->
   <div class="relative z-20 flex flex-col justify-end h-full p-5">
     <h1 class="text-2xl font-bold text-white text-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] leading-snug">
       ANGGY reparaciones y costuras
     </h1>
     <h3 class="mt-2 text-sm text-gray-200 text-center drop-shadow-lg">
-      Clínica de ropa, bordados, transformación de textiles y más.
+      Clínica de ropa, reparaciones en cuero, cambios de cierre, transformación de textiles, bastas y más.
     </h3>
     <a 
       href="./contacto" 
@@ -48,13 +47,13 @@
   class="hidden lg:flex relative contenedor-bienvenida w-3/4 mx-auto justify-center h-120 rounded-2xl overflow-hidden bg-cover bg-center shadow-2xl"
   :style="{ backgroundImage: `url(${imagenFondoBienvenida})` }"
 >
-  <!-- Capa oscura/overlay sobre la imagen de fondo -->
+  <!-- Capa overlay -->
   <div class="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
 
-  <!-- Contenido relativo para quedar por encima del fondo -->
+  <!-- Contenido relativo -->
   <div class="relative z-10 flex w-full h-full items-center justify-between px-8">
     
-    <!-- Columna izquierda: Galería automática ovalada -->
+    <!-- Galería automática -->
     <div class="p-5 flex items-center justify-center shrink-0">
       <div class="relative h-100 w-64 overflow-hidden rounded-full border-2 border-amber-200/50 shadow-2xl">
         <Transition name="fade">
@@ -68,13 +67,13 @@
       </div>
     </div>
 
-    <!-- Columna derecha: Texto de bienvenida -->
+    <!-- Texto de bienvenida -->
     <div class="text-center my-auto px-8 w-full">
       <h1 class="text-4xl lg:text-5xl font-bold text-white tracking-wide">
         ANGGY reparaciones y costuras
       </h1>
       <h3 class="mt-4 text-lg text-gray-200 font-light">
-        Clínica de ropa, bordados, transformación de textiles y más.
+        Clínica de ropa, reparaciones en cuero, cambios de cierre, transformación de textiles, bastas y más.
       </h3>
       <a
         href="./servicios"
